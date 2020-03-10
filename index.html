@@ -26,7 +26,7 @@
             <i class="fas fa-bars"></i>
           </div>
 
-          <ul class="nav-list">
+          <ul class="nav-list list-unstyled">
             <li class="nav-item">
               <a href="" class="nav-link">Home</a>
             </li>
@@ -54,16 +54,20 @@
             <div class="main-content text-center">
               <h1 class="main-heading ">iPhone X</h1>
               <p class="main-p m-0">Pro camera Beauty Amazing</p>
-              <img src="/images/iphonex.png" alt="img" />
+              <img src="images/iphonex.png" alt="img" />
             </div>
           </div>
         </div>
       </div>
     </section>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+
+    <script>
+      const openMenu = document.querySelector(".menu-toggler");
+      const navList = document.querySelector(".nav-list");
+
+      openMenu.addEventListener("click", () => {
+        navList.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
