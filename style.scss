@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap");
+
+/*Variables*/
+$background-color: linear-gradient(120deg, #37393b, #2e3032);
+$light-font-color: #b9bbc2;
+$pink: #c92b7d;
+$shadow-normal: 7px 5px 10px #2b2d2f, -7px -5px 10px #3b3d3f;
+$shadow-inset: inset 7px 5px 10px #2b2d2f, inset -7px -5px 10px #3b3d3f;
+$shadow-normal-light: 7px 5px 10px rgba(0, 0, 0, 0.1),
+  -7px -5px 10px rgba(255, 255, 255, 0.5);
+$shadow-inset-light: inset 7px 5px 10px rgba(0, 0, 0, 0.1),
+  inset -7px -5px 10px rgba(255, 255, 255, 0.5);
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+  color: $light-font-color;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: $pink !important;
+  }
+}
+
+p {
+  font-weight: 300;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  .nav {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-brand {
+    font-size: 34px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 300;
+
+    span {
+      color: $pink;
+      font-weight: 480;
+      transition: color 0.5s ease-in-out;
+    }
+  }
+
+  a.nav-brand:hover span {
+    color: #fff;
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 65vh;
+  background: $background-color;
+  overflow: hidden;
+
+  .main-content {
+    color: $light-font-color;
+  }
+
+  .main-heading {
+    font-size: 50px;
+    margin-top: 50px;
+  }
+}
